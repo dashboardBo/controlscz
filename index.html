@@ -974,7 +974,7 @@ const $ = id => document.getElementById(id);
    a) HTML servido por Apps Script (HtmlService): usa google.script.run.getDashboard(), no requiere API_URL.
    b) HTML alojado aparte: pegue en API_URL la URL de la Web App (termina en /exec).
    Sin ninguno de los dos, funciona en modo demostración con datos simulados. */
-const API_URL = '';
+const API_URL = 'https://script.googleusercontent.com/macros/echo?user_content_key=AUkAhnTZfPlROsDacw8bXoxSuYQSMwgIapVx_1CnJI8cM80hIllyL2MS9q38nXjgLpPeTo5ksxJdF9hkG2Jt1PuZV1dWbkbQYpD_8gPuufabrowNvABKziBmgaKkgPz0OMv_8SRMNzQK9eQwJkzh1HfUxg3jkPlYpJ2Nb-Cwxm8lbszjC6wUrSZvJVIvJH_JuUCM3jpMWk9OUVgFGoOTw6_hlmC1cYrb7cSeaf3I2PyRfDgOsaWSy2nFr83TGnfX09kix65mSUKzK48IjXcqWjYE9GlScFMoZA&lib=Mdmo4DcjgzMONfCyoSBCrtqhbGRyAWMRn';
 const API_TOKEN = '';             // solo modo (b), si definió TOKEN en Code.gs
 const API_REFRESH_MS = 60000;     // 1 consulta por minuto (el caché del servidor dura 55 s)
 const INTERPOLAR_VIVO = true;     // entre consultas, proyecta el turno en curso según el ritmo anterior (false = solo datos reales)
